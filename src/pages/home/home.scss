@@ -1,0 +1,32 @@
+page-home {
+  #map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ 
+ 
+    
+  }
+
+  .travelMode {
+    position: absolute;
+    top: 8%;
+    z-index: 5;
+    margin-left: 3%;
+    color: black;
+    font-family: 'Roboto','sans-serif';
+    //padding-left:40%;
+    width: 70%;
+  }
+  
+  .changeMaps{
+    position: absolute;
+    top: 8%;
+    z-index: 5;
+    margin-left:40%;
+    color: black;
+    font-family: 'Roboto','sans-serif';
+    //padding-left:40%;
+    width: 100%;
+  }
+}

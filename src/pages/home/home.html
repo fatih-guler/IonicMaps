@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content id="content">
+  <label hidden id="travelModeLabel">Driving</label>
+
+  <div class="travelMode">
+    <ion-select [(ngModel)]="travelMode" (ngModelChange)="onChange($event)" style="float:left;height:40px;width:100%; font-size:12px ;
+                    background-color :white;">
+      <ion-option selected value="Driving">Driving</ion-option>
+      <ion-option value="Walking">Walking</ion-option>
+      <!-- <ion-option value="Bicycling">Bicycling</ion-option> -->
+      <!-- <ion-option value="Transit">Transit</ion-option>-->
+    </ion-select>
+  </div>
+  <div class="changeMaps">
+    <ion-select [(ngModel)]="mapType" (ngModelChange)="onChangeMaps($event)" style="float:left;height:40px;width:100%; font-size:12px ;
+    background-color :white;">
+      <ion-option selected value="Google">Google Maps</ion-option>
+      <ion-option value="Yandex">Yandex Maps</ion-option>
+    </ion-select>
+  </div>
+
+  <div id="map">
+
+  </div>
+  <div id="directionsPanel" style="width:100%;">
+  </div>
+</ion-content>
